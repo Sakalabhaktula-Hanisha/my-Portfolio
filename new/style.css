@@ -1,0 +1,202 @@
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: linear-gradient(#ff99cc , #33ccff);
+    background-attachment: fixed;
+    transition: all 0.5s ease-in-out;
+}
+/*nav bar styling*/
+nav{
+    position: fixed;
+    width:100%;
+    padding: 20px 0;
+    transition: all 0.4s ease; 
+}
+nav .navbar{
+    display: flex;
+    width: 90%;
+    margin:auto;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .navbar .logo a{
+    font-size: 40px;
+    font-weight: 500;
+    color: #4070f4;
+}
+nav .navbar .menu{
+    display: flex;
+}
+nav .navbar .menu li{
+   margin: 0 8px;
+   list-style: none;
+}
+nav .navbar .menu li a{
+   font-size: 18px;
+   font-weight: 500;
+   color: #0e2431;
+   transition: all 0.3s ease;
+}
+nav .navbar .menu li a::after{
+    content: '';
+    width: 0%;
+    height: 2.5px;
+    background: #4070f4;
+    display:block;
+    margin: auto;
+    transition: 0.5s;
+}
+nav .navbar .menu li a:hover{
+    color:#4070f4;
+}
+nav .navbar .menu li a:hover::after{ 
+    color: #4070f4;
+    width: 100%;
+ }
+nav .menu-btn,
+.navbar .cancel-btn{
+    position: absolute;
+    color:#fff;
+    font-size: 20px;
+    top: 20px;
+    right: 30px;
+    display: none;
+}
+nav .menu-btn{
+    color:#4070f4;
+}
+.home , .about, .skills, .project{
+    height: 100vh;
+    width: 100%;
+}
+.about, .skills, .project{
+    display: flex;
+    flex-direction: column;
+}
+.home .home-content{
+    height: 100vh;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.home .text-one{
+    font-size: 25px;
+}
+.home .text-two{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .text-three{
+    font-size: 40px;
+}
+.home .text-four{
+    font-size: 23px;
+    margin: 5px 0;
+}
+.about .content, .skills .content , .project .content{
+    width:80%;
+    height: 70%;
+    margin: auto;
+    font-family: sans-serif;
+}
+.title{
+    display: flex;
+    justify-content: center;
+}
+.title span{
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 8px;
+    position: relative;
+}
+.title span::before , 
+.title span::after{
+   content:'';
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   height: 3px;
+   width: 100%;
+   background-color: #4070f4;
+}
+.title span::after{
+   width: 70%;
+   left: 50%;
+   transform: translateX(-50%);
+   bottom: -7px;
+}
+.about-details{
+    width: 80%;
+    height: 90%;
+   display: flex;
+   margin: auto;
+   justify-content: center;
+}
+.box{
+    padding: 10px;
+    margin: auto 10px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    font-size: larger;
+    text-align: center;
+    border-radius: 5px;
+}
+.details{
+    display:flex;
+    justify-content: space-between;
+    width: 70%;
+    height: 70%;
+    margin: 15%;
+    font-size: 32px;
+    font-weight: 500;
+}
+.contact{
+    height: 70vh;
+    width: 100%;
+}
+.contact .text{
+    text-align: center;
+    margin:30px auto;
+    width:80%;
+    font-size: 20px;
+}
+.contact .handles{
+    text-align:center;
+    margin: 30px auto;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+.contact .handles span{
+   margin: 20px auto;
+   font-size: 40px;
+   color: black;
+}
+
+.projects{
+    display: flex;
+    justify-content: space-between;
+    margin: 10%;
+    font-size: 20px;
+    font-weight: 400;
+}
+.handles a i{
+    color: black;
+}
+.handles a i:hover{
+    color:#4070f4;
+}
+
